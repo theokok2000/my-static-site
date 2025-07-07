@@ -1,0 +1,85 @@
+/* → Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 2rem;
+}
+
+/* → Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+table td,
+table th {
+  padding: 0.75rem;
+}
+
+table thead {
+  background: #005f73;
+  color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background: #e0fbfc;
+}
+
+/* → Headings & text */
+h1, h3 {
+  color: #0a4f5b;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+em {
+  color: #555;
+}
+
+/* → Horizontal rules */
+hr {
+  border: none;
+  border-top: 2px solid #94d2bd;
+  margin: 2rem 0;
+}
+
+/* → Links */
+a {
+  color: #0a9396;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* → Images */
+img {
+  max-width: 200px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* → Stars in skills */
+.skill-stars {
+  font-size: 1.2rem;
+  color: #ee6c4d;
+}
+
+/* → Utility */
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <title>Avgoustinos Kokonis – Personal Site</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <nav class="text-center">
+    <a href="#profile">Profile</a> |
+    <a href="#books">Books</a> |
+    <a href="#work">Work</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#hobbies">Hobbies</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+  <hr>
+
+  <section id="profile">
+    <table cellspacing="20">
+      <tr>
+        <td class="text-center">
+          <img src="{{ url_for('static', filename='avg.jpg') }}"
+               alt="Avgoustinos Kokonis profile picture">
+        </td>
+        <td>
+          <h1>Avgoustinos Kokonis</h1>
+          <p><em>Founder &amp; CTO of
+            <strong><a href="#">Ψηφιακοί Αλχημιστές</a></strong>.
+          </em></p>
+          <p>I am an iOS and Web Developer. I ❤️ coffee and brew my own beers.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <hr>
+
+  <section id="books">
+    <h3>Books &amp; Teaching</h3>
+    <ul>
+      <li>The Complete iOS App Development Bootcamp</li>
+      <li>The Complete Web Development Bootcamp</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section id="work">
+    <h3>Work Experience</h3>
+    <table cellspacing="10">
+      <thead>
+        <tr><th>Dates</th><th>Role</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2020–2022</td><td>Κύριος Αρχιτέκτονας Εικονικών Κόσμων @ Ονειρο-Δόμηση Α.Ε.</td></tr>
+        <tr><td>2022–2024</td><td>Αναλυτής Κβαντικών Δεδομένων @ QuantumLeap Tech</td></tr>
+        <tr><td>2024–Σήμερα</td><td>Διευθυντής Ψηφιακής Καινοτομίας @ Νόησις Labs</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <table cellspacing="10">
+      <tr><td>iOS Development</td><td class="skill-stars">⭐️⭐️⭐️⭐️⭐️</td></tr>
+      <tr><td>Web Development</td><td class="skill-stars">⭐️⭐️⭐️⭐️⭐️</td></tr>
+      <tr><td>Programming</td><td class="skill-stars">⭐️⭐️⭐️⭐️⭐️</td></tr>
+      <tr><td>Photography</td><td class="skill-stars">⭐️⭐️</td></tr>
+    </table>
+  </section>
+
+  <hr>
+
+  <section id="hobbies">
+    <h3>Hobbies</h3>
+    <p>My love for coffee brewing, home-brew beer experiments, and travel photography.</p>
+  </section>
+
+  <hr>
+
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <form action="#" method="post">
+      <label>Name:<br>
+        <input type="text" name="name" required>
+      </label><br><br>
+      <label>Email:<br>
+        <input type="email" name="email" required>
+      </label><br><br>
+      <label>Message:<br>
+        <textarea name="message" rows="5" required></textarea>
+      </label><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>
